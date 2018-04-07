@@ -1,0 +1,214 @@
+html, body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+#header {
+  user-select: none;
+  -moz-user-select: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 300px;
+  height: 100px;
+}
+
+
+#main-word {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+
+#second-word {
+  font-family: Arial;
+  font-size: 12px;
+}
+
+
+#console-box {
+  user-select: none;
+  -moz-user-select: none;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+
+.console-text {
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#dialog-box {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 370px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+    background: lightblue; 
+}
+
+
+.message {
+  margin-left: 17px;
+  width: 550px;
+  min-height: 37px;
+}
+
+
+/* this name box is seen only by the client who've sent a message (so the client could see their own message) */
+.client-name-from-client {
+
+  text-align: right;
+  color: rgb(232, 58, 213);
+  padding-top: 5px;
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 24px;
+  width: 540px;
+  height: 25px;
+
+}
+
+/* this name box is seen when getting a message from the server (from another client) */
+.client-name-from-server {
+
+  color: rgb(63, 46, 255);
+  padding-top: 5px;
+  padding-right: 10px;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 24px;
+  width: 540px;
+  height: 25px;
+
+}
+
+.message {
+  border-top: 1px solid rgb(208, 162, 255);
+}
+
+.message-box-client {
+  text-align: right;
+  font-family: Arial;
+  font-size: 13px;
+  width: 550px;
+  padding-bottom: 5px;
+}
+
+.message-box-server {
+  font-family: Arial;
+  font-size: 13px;
+  width: 550px;
+  padding-bottom: 5px;
+}
+
+
+
+/* confirm the username and ip address */
+#connect-button {
+  font-family: Arial;
+  font-size: 12px;
+  user-select: none;
+  text-align: center;
+  line-height: 28px;
+  background-color: #6ba3ff;
+  position:  absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 172px;
+  height: 26px;
+}
+
+#username {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+}
+
+#ip-address {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 60px;
+}
+
+
+
+/* hides the username and ipaddress fields after they've been entered */
+#hider {
+  z-index: 0;
+  transition-property: background-color;
+  transition-duration: 1s;
+  position: absolute;
+  width: 20%;
+  height: 90px;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* INPUT FROM THE USER */
+
+#container {
+
+  background-color: #93bbff;
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -300px;
+
+}
+
+#text-input {
+
+  width: 480px;
+  height: 72px;
+
+  resize: none;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+#submit {
+
+  font-family: Arial;
+  font-size: 12px;
+  user-select: none;
+  text-align: center;
+  line-height: 79px;
+  background-color: #6ba3ff;
+  position:  absolute;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+  height: 76px;
+
+}
+
+#submit:hover {
+  background-color: #6397ed;
+}
+#submit:active {
+  background-color: #5380cc;
+}
+
+/* INPUT FROM THE USER END */
